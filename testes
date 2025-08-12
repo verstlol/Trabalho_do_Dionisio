@@ -1,0 +1,32 @@
+while True:
+    try:
+        num1 = float(input("Escolha seu primeiro numero: "))
+        break
+    except ValueError:
+        print("Entrada inválida. Por favor, digite apenas números.")
+
+while True:
+    try:
+        num2 = float(input("Escolha mais um numero: "))
+        break
+    except ValueError:
+        print("Entrada inválida. Por favor, digite apenas números.")
+op = input("Escolha uma operação:"
+" soma(+), subtracao(-), multiplicacao(*) ou divisao(/): ")
+if op == "+":
+    rs1= num1 + num2
+    print(f"Resultado da soma:{rs1}")
+elif op == "-":
+    rs2= num1 - num2
+    print(f"Resultado da subtracao:{rs2}")
+elif op == "*":
+    rs3= num1 * num2
+    print(f"Resultado da multiplicacao:{rs3}")
+elif op == "/":
+    if num2 != 0:
+        rs4 = num1 / num2
+        print(f"A divisão é:{rs4}")
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+else:
+    print("Operação inválida. Por favor, escolha entre as opções disponíveis.")
